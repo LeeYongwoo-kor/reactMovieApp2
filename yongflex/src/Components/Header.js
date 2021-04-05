@@ -39,6 +39,7 @@ const SLink = styled(Link)`
 export default withRouter(({ location: { pathname } }) => (
   // props파라미터로 어떤 정보를 가져오는지 찍어볼 것!
   <Header>
+    {/* {console.log(props)}; */}
     <List>
       <Item current={pathname === "/"}>
         <SLink to="/">Movies</SLink>
